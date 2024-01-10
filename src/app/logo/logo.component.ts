@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './logo.component.css',
 })
 export class LogoComponent {
-  appName = 'My Angular App'; // Replace with your app name
+  appName = 'My Angular App';
 }

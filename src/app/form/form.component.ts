@@ -12,7 +12,6 @@ export class FormComponent {
   newPostDescription = '';
 
   onSubmit() {
-    // Add logic to handle form submission and emit an event with the new post data
     if (
       this.newPostTitle.trim() !== '' &&
       this.newPostDescription.trim() !== ''
@@ -24,7 +23,7 @@ export class FormComponent {
       this.postAdded.emit(newPost);
       this.newPostTitle = '';
       this.newPostDescription = '';
-      this.showForm = false; // Hide the form after submission
+      this.showForm = false;
     }
   }
 
