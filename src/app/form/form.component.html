@@ -1,0 +1,24 @@
+<div *ngIf="showForm">
+  <form (ngSubmit)="onSubmit()">
+    <label for="postTitle">Title:</label>
+    <input
+      type="text"
+      id="postTitle"
+      [(ngModel)]="newPostTitle"
+      name="postTitle"
+      required
+    />
+
+    <label for="postDescription">Description:</label>
+    <input
+      type="text"
+      id="postDescription"
+      [(ngModel)]="newPostDescription"
+      name="postDescription"
+      required
+    />
+
+    <button type="submit">Add Post</button>
+  </form>
+</div>
+<button (click)="toggleForm()">Add Post</button>
